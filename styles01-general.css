@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #eee;
+  }
+  
+  .logo-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+  }
+
+
+  .logo {
+    color: red;
+    text-shadow: 2px 2px 4px #fff;
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  .logo_sub {
+    color: white;
+    font-size: .8rem;
+    
+    margin: 0;
+    text-align: center;
+    line-height: 0.8;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  header nav a {
+      color: #eee;
+      text-decoration: none;
+      margin-left: 1rem;
+      padding: 5px 10px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header nav a:hover, header nav a:active {
+    background-color: #f38484;
+    color: #333;
+  }
+
+  
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #444;
+  }
+  
+  nav a,
+  .footer-nav a {
+    color: #eee;
+    text-decoration: none;
+  }
+  
+  nav a:hover,
+  .footer-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    border-bottom: 1px solid #555;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-nav a {
+    margin: 0 10px;
+    padding: 5px;
+  }
+  
+  footer .footer-nav a {
+    color: #eee;
+  }
+  
+  footer .footer-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos responsivos para pantallas pequeñas */
+  @media (max-width: 480px) {
+    .footer-nav a {
+      display: block;
+      text-align: center;
+      margin: 5px 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav a {
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .package {
+    background-color: #303030;
+    border: 1px solid #49be25;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .package:hover {
+    background-color: #3f3f3f;
+  }
+  
+  h3 {
+    margin: 0 0 10px;
+  }
+  
+  p {
+    margin: 0;
+  }
+  

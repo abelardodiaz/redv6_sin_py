@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proveedor de Internet Rural</title>
+<link rel="stylesheet" href="styles01-general.css">
+<link rel="stylesheet" href="styles02-ventanapdf.css">
+<style>
+ 
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+  }
+
+  .logo {
+    color: red;
+    text-shadow: 2px 2px 4px #fff;
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  .logo_sub {
+    color: white;
+    font-size: .8rem;
+    
+    margin: 0;
+    text-align: center;
+    line-height: 0.8;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  header nav a {
+      color: #eee;
+      text-decoration: none;
+      margin-left: 1rem;
+      padding: 5px 10px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header nav a:hover, header nav a:active {
+    background-color: #f38484;
+    color: #333;
+  }
+</style>
+
+
+
+</head>
+<body>
+
+<header>
+  <div>
+    <h1 class="logo">REDV6</h1>
+    <p class="logo_sub">T&nbsp;E&nbsp;L&nbsp;E&nbsp;C&nbsp;O&nbsp;M&nbsp;U&nbsp;N&nbsp;I&nbsp;C&nbsp;A&nbsp;C&nbsp;I&nbsp;O&nbsp;N&nbsp;E&nbsp;S</p>
+  </div>
+  <nav>
+    <a class="nav_header" href="#empresa">Link 1</a>
+    <a class="nav_header" href="#servicios">Link 2</a>
+    <a class="nav_header" href="#contacto">Link 3</a>
+  </nav>
+</header>
+<!--
+<nav>
+  <a href="#empresa">Presentación de la empresa</a>
+  <a href="#servicios">Servicios y tarifas</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+-->
+
+<main>
+  <section id="empresa">
+    <h2>&nbsp;</h2>
+    <p>Aquí puedes agregar información sobre tu empresa de proveedor de internet rural.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>&nbsp;</h2>
+    <div class="container">
+      <div class="package">
+        <h3>10 Mbps</h3>
+        <p>Precio: $XX.XX</p>
+      </div>
+      <div class="package">
+        <h3>20 Mbps</h3>
+        <p>Precio: $XX.XX</p>
+      </div>
+      <div class="package">
+        <h3>50 Mbps</h3>
+        <p>Precio: $XX.XX</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Teléfono: (000) 000-0000</p>
+    <p>WhatsApp: (000) 000-0000</p>
+    <p>Mapa: [Incluir enlace o incrustar mapa]</p>
+  </section>
+</main>
+
+<footer class="footer-nav">
+ 
+  <a href="aviso_privacidad.html">Aviso de privacidad</a>
+  <a href="#" onclick="showPopup('pdf1', 'recibo1.pdf');">Mostrar PDF</a>
+
+</footer>
+
+
+<div class="overlay" id="pdf1">
+  <div class="popup">
+    <span class="close" onclick="hidePopup('pdf1');">&times;</span>
+    <object id="pdf1Viewer" class="pdf-viewer" type="application/pdf"></object>
+  </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

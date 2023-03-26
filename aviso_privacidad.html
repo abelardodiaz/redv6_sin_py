@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proveedor de Internet Rural</title>
+<link rel="stylesheet" href="styles01-general.css">
+<link rel="stylesheet" href="styles02-ventanapdf.css">
+
+<style>
+ 
+</style>
+
+
+
+</head>
+<body>
+
+<header>
+  <div>
+    <a href="index.html" class="logo-link">
+    <h1 class="logo">REDV6</h1>
+    <p class="logo_sub">T&nbsp;E&nbsp;L&nbsp;E&nbsp;C&nbsp;O&nbsp;M&nbsp;U&nbsp;N&nbsp;I&nbsp;C&nbsp;A&nbsp;C&nbsp;I&nbsp;O&nbsp;N&nbsp;E&nbsp;S</p>
+    </a>  
+    </div>
+  <nav>
+    <a class="nav_header" href="index.html#empresa">Empresa</a>
+    <a class="nav_header" href="index.html#servicios">Servicios</a>
+    <a class="nav_header" href="index.html#contacto">Contacto</a>
+  </nav>
+</header>
+<!--
+<nav>
+  <a href="#empresa">Presentación de la empresa</a>
+  <a href="#servicios">Servicios y tarifas</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+-->
+
+<main>
+  <section id="aviso_priv">
+    <h2>&nbsp;</h2>
+        <h1>AVISO DE PRIVACIDAD DE REDV6</h1>
+        <p>En cumplimiento con lo establecido por la Ley Federal de Protecci&oacute;n de Datos Personales en Posesi&oacute;n de Particulares (la "Ley"), REDV6, con domicilio en [Direcci&oacute;n de REDV6], hace de su conocimiento la pol&iacute;tica de privacidad y manejo de datos personales.</p>
+        <h2>Datos personales que recabamos</h2>
+        <p>REDV6 podr&aacute; recopilar y procesar los siguientes datos personales de sus clientes:</p>
+        <ul>
+            <li>Nombre completo</li>
+            <li>Direcci&oacute;n de correo electr&oacute;nico</li>
+            <li>N&uacute;mero telef&oacute;nico</li>
+            <li>Direcci&oacute;n f&iacute;sica</li>
+            <li>N&uacute;mero de identificaci&oacute;n oficial (INE, pasaporte, licencia de conducir, etc.)</li>
+            <li>Datos de facturaci&oacute;n y pago</li>
+            <li>Registro de navegaci&oacute;n en internet</li>
+        </ul>
+        <h2>Finalidades del tratamiento de datos</h2>
+        <p>REDV6 utiliza los datos personales de sus clientes para las siguientes finalidades:</p>
+        <ul>
+            <li>Proveer servicios de internet</li>
+            <li>Facturaci&oacute;n y cobro de los servicios</li>
+            <li>Comunicaciones relacionadas con los servicios</li>
+            <li>Atenci&oacute;n al cliente y soporte t&eacute;cnico</li>
+            <li>Cumplimiento de las obligaciones legales y fiscales aplicables</li>
+        </ul>
+        <h2>Medios para el ejercicio de los derechos del usuario</h2>
+        <p>Los clientes de REDV6 tienen el derecho de <b>Acceder</b>, <b>Rectificar</b>, <b>Cancelar</b> 
+            u <b>Oponerse</b> al tratamiento de sus datos personales (derechos ARCO), 
+            as&iacute; como de revocar el consentimiento otorgado para el tratamiento de
+            
+            los mismos. Para ejercer estos derechos, los clientes deber&aacute;n enviar un correo electr&oacute;nico 
+            a <span id="email-placeholder"></span></p>
+        <h2>Modificaciones al aviso de privacidad</h2>
+        <p>REDV6 se reserva el derecho de efectuar en cualquier momento modificaciones o 
+            actualizaciones al presente aviso de privacidad, para la atenci&oacute;n de novedades 
+            legislativas, pol&iacute;ticas internas o nuevos requerimientos para la prestaci&oacute;n
+             u ofrecimiento de nuestros servicios o productos.</p>
+        
+    </section>
+
+</main>
+
+<footer class="footer-nav">
+    <a href="index.html">Inicio</a>
+  <a href="aviso_privacidad.html">Aviso de privacidad</a>
+  <a href="#" onclick="showPopup('pdf1', 'autorizacion_IFT.pdf');">2023 IFETEL Autorizaci&oacute;n</a>
+
+</footer>
+
+
+<div class="overlay" id="pdf1">
+  <div class="popup">
+    <span class="close" onclick="hidePopup('pdf1');">&times;</span>
+    <object id="pdf1Viewer" class="pdf-viewer" type="application/pdf"></object>
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script src="mask.js"></script>
+
+</body>
+</html>
